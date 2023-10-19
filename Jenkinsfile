@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Test') {
             steps {
-                echo 'Building..'
+                sh 'newman run Dog API Tests.postman_collection.json'
             }
         }
         
