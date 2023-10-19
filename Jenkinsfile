@@ -10,7 +10,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing..'
-                sh label: 'API Collection Tests', script: 'newman run Dog API Tests.postman_collection.json'
+                sh label: 'API Collection Tests', script: 'newman run Dog\ API\ Tests.postman_collection.json'
             }
         }
         stage('Deploy') {
